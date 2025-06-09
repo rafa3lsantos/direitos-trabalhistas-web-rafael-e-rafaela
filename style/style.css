@@ -1,0 +1,43 @@
+.card-discriminacao-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-discriminacao {
+    width: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #435508;
+    margin: 20px;
+    padding: 20px; 
+}
+
+.card-discriminacao:hover{
+  transform: scale(1.03);
+}
+
+.card-discriminacao h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.card-discriminacao p {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: justify;
+}
+
+.card-discriminacao i {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #435508; 
+}
+
+p{
+  font-family: "Roboto", sans-serif;
+}
