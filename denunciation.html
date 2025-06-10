@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./assets/logo_worker_rights.png" alt="Logo do site">
+        <ul class="btns-center">
+            <li><a href=""><b>Discriminação</b></a></li>
+            <li><a href=""><b>Direitos</b></a></li>
+            <li><a href=""><b>Relatos</b></a></li>
+        </ul>
+        <ul class ="btn-isolado">
+            <li id="btn-denuncia"><a href=""><b>Denúncia</b></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-geral">
+            <h1>Relate a denúncia</h1>
+            <form class="formulario">
+            <i class="fa-solid fa-comments"></i>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Como podemos ajudar?</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+            </form>
+            <p class="mensagem-final">
+                Você também pode denunciar anonimamente através do Disque 100 ou pelo canal de denúncias do <strong>Ministério do Trabalho e Emprego</strong>. Sua voz é essencial para combater irregularidades e garantir direitos.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p><b>&copy; 2025 The Rafas. Todos os direitos reservados</b></p>
+    </footer>
+</body>
+</html>

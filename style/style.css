@@ -163,4 +163,81 @@ footer p {
 
 p{
   font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.form-geral {
+  max-width: 700px;
+  margin: 0 auto; /*centraliza horizontalmente na página */
+  padding: 40px 20px; /*add um espaço interno (top/baixo 40px, lados 20px)*/
+  font-family: Arial, sans-serif;
+}
+
+
+.formulario {
+  background-color: #f2ebe0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #4d4f1e;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: #c9ccb6;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.formulario button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #4d4f1e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;  /*mudança suave da cor d background */
+}
+
+.formulario button:hover {
+  background-color: #3b3d17;
+  transform: scale(1.03);
+}
+
+.form-geral h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.formulario i{
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mensagem-final {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "roboto", serif;
+
 }
