@@ -127,46 +127,40 @@ footer p {
   text-align: center;
 }
 
-.card-discriminacao-container {
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.text-discrimination {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.card{
+    width: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #435508;
+    margin: 20px;
+    padding: 20px; 
 }
 
-.card-discriminacao {
-  width: 400px;
-  border-radius: 8px;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0 0 10px #435508;
-  margin: 20px;
-  padding: 20px;
-}
-
-.card-discriminacao:hover {
+.card:hover{
   transform: scale(1.03);
 }
 
-.card-discriminacao h2 {
+.card h2 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   text-align: left;
 }
 
-.card-discriminacao p {
+.card p {
   font-size: 0.9rem;
   color: #333;
   text-align: justify;
 }
 
-.card-discriminacao i {
+.card i {
   display: block;
   text-align: left;
   margin-bottom: 10px;
@@ -305,7 +299,80 @@ footer p {
   text-align: left;
 }
 
-/* MediaQueries */
+/* Página de Direitos */
+
+.card-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 60px;
+}
+
+.card-2{
+    width: 600px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #435508;
+    margin: 20px;
+    padding: 20px; 
+}
+
+.card-2:hover{
+  transform: scale(1.03);
+}
+
+.card-2 h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.card-2 p {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: justify;
+}
+
+.card-2 i {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #435508; 
+}
+
+.conteudo-direitos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  border-radius: 15px;
+}
+
+.cards-esquerda {
+  flex: 2; /* ocupa duas vezes mais espaço que .imagem-direita no layout flex */
+}
+
+.imagem-direita img {
+  max-width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.imagem-direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 68px;
+  margin-right: 170px;
+  margin-top: 20px;
+}
+
+ /* MediaQueries */
 
 /* Index */
 
@@ -347,7 +414,8 @@ footer p {
   h1 {
     font-size: 28px;
   }
-
+  
+  
   .tres-blocos-img img {
     width: 300px;
   }
@@ -390,9 +458,7 @@ footer p {
     width: 40px;
     height: 120px;
   }
-
 }
-
 
 /* Reports */
 
@@ -424,53 +490,3 @@ footer p {
     font-size: 12px;
   }
 }
-
-
-
-
-/* .report-container {
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f5f2ed;
-  height: 400px;
-  box-shadow: 0 0 10px #435508;
-}
-
-.report-container:hover {
-  transform: scale(1.03);
-}
-
-.img-container img {
-  width: 200px;
-  margin: 30px;
-}
-
-.name,
-.profession {
-  padding: 7px;
-  text-align: center;
-}
-
-.report-text {
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  text-align: left;
-}
-
-.report-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.report-p p {
-  text-align: left;
-} */
