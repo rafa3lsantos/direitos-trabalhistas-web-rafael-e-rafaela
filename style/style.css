@@ -26,16 +26,13 @@ nav img {
   width: 200px;
   padding-bottom: 5px;
   left: 0;
-  /* border: 10px solid green; */
 }
 
 .btns-center {
   display: flex;
   flex-direction: row;
   align-self: center;
-  /* border: 4px solid blue; */
   list-style: none;
-  /* padding: 10px; */
   font-family: "Oswald", sans-serif;
 }
 
@@ -48,7 +45,6 @@ nav img {
 
 .btn-isolado {
   justify-content: flex-end;
-  /* border: 4px solid yellow; */
   list-style: none;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -64,7 +60,6 @@ nav img {
 
 h1 {
   font-family: "Playfair Display", serif;
-  /* border: 4px solid purple; */
   text-align: center;
   margin: 20px;
   margin-top: 50px;
@@ -72,11 +67,9 @@ h1 {
 }
 
 .tres-blocos-img {
-  /* border: 4px solid brown; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* padding-bottom: 50px; */
 }
 
 .tres-blocos-img img {
@@ -299,28 +292,27 @@ footer p {
   text-align: left;
 }
 
-/* Página de Direitos */
-
 .card-container-2 {
   display: flex;
   flex-direction: column;
-  justify-content:left;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 60px;
+  align-items: center;
+  margin: 50px auto;
+  width: 100%;
 }
 
-.card-2{
-    width: 600px;
-    border-radius: 8px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px #435508;
-    margin: 20px;
-    padding: 20px; 
+.card-2 {
+  width: 600px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px #435508;
+  margin: 20px 0;
+  padding: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-.card-2:hover{
+.card-2:hover {
   transform: scale(1.03);
 }
 
@@ -341,35 +333,16 @@ footer p {
   text-align: left;
   margin-bottom: 10px;
   font-size: 24px;
-  color: #435508; 
-}
-
-.conteudo-direitos {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 40px;
-  border-radius: 15px;
-}
-
-.cards-esquerda {
-  flex: 2; /* ocupa duas vezes mais espaço que .imagem-direita no layout flex */
-}
-
-.imagem-direita img {
-  max-width: 400px;
-  height: 500px;
-  border-radius: 20px;
+  color: #435508;
 }
 
 .imagem-direita {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 68px;
-  margin-right: 170px;
-  margin-top: 20px;
+  width: 600px;
+  margin: 0 auto 40px auto;
+  margin-top: 40px;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
  /* MediaQueries */
@@ -446,6 +419,29 @@ footer p {
   .btn-isolado a {
     font-size: 12px;
   }
+
+  /* Página de Direitos */
+
+  .card-2,
+  .imagem-direita {
+    width: 90%;
+  }
+
+  main p {
+    width: 85%;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 12px;
+  }
+
 }
 
 @media(max-width: 430px) {
@@ -472,6 +468,7 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -482,11 +479,18 @@ footer p {
     width: 150px;
   }
 
-  .report-container h2, h3, p {
+  .report-container h2, h3 {
     font-size: 20px;
   }
 
   .report-container p {
     font-size: 12px;
   }
+
+  .report-text p {
+    width: 100%;
+  }
 }
+
+/* LaborLaw */
+
